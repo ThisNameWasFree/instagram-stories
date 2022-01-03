@@ -24,14 +24,20 @@ body {
     margin-left: 2px;
 }
 
-.timeline-chunk-inner {
+/* Select all '.timeline-chunk-inner' elements
+   with '.timeline-chunk' parent element
+   after '.timeline-chunk-active' */
+.timeline-chunk-active ~ .timeline-chunk > .timeline-chunk-inner {
     width: 0;
+}
+
+.timeline-chunk-inner {
     height: inherit;
     background-color: #fff;
     border-radius: inherit;
 }
 
-.player-content {
+.player-content-wrapper {
     position: relative;
 }
 
