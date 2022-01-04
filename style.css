@@ -24,6 +24,7 @@ body {
     margin-left: 2px;
 }
 
+.timeline-chunk-active > .timeline-chunk-inner,
 /* Select all '.timeline-chunk-inner' elements
    with '.timeline-chunk' parent element
    after '.timeline-chunk-active' */
