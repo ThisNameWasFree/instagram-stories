@@ -6,48 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Instagram Stories</title>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 </head>
 <body>
 
-  <div class="player">
-    <!-- TIMELINE - CHUNKS -->
-    <div class="timeline">
-      <div class="timeline-chunk timeline-chunk-active">
-        <div class="timeline-chunk-inner"></div>
-      </div>
-      <div class="timeline-chunk">
-        <div class="timeline-chunk-inner"></div>
-      </div>
-      <div class="timeline-chunk">
-        <div class="timeline-chunk-inner"></div>
-      </div>
-      <div class="timeline-chunk">
-        <div class="timeline-chunk-inner"></div>
-      </div>
-    </div>
+  <div class="my-player"></div>
 
-    <!-- IMAGES -->
-    <div class="player-content-wrapper">
-      <div class="player-chunk-switcher player-chunk-prev"></div>
-      <div class="player-chunk-switcher player-chunk-next"></div>
-
-      <div class="player-content">
-        <div class="player-chunk player-chunk-active">
-          <img src="img/wolf.jpg" alt="wolf">
-        </div>
-        <div class="player-chunk">
-          <img src="img/cat.jpg" alt="cat">
-        </div>
-        <div class="player-chunk">
-          <img src="img/leopard.jpg" alt="leopard">
-        </div>
-        <div class="player-chunk">
-          <img src="img/white-cat.jpg" alt="white-cat">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="main.js"></script>
+  <script>
+    initPlayer({
+        target: '.my-player',
+        slides: [
+            { url: 'img/wolf.jpg', alt: 'slide1' },
+            { url: 'img/cat.jpg', alt: 'cat' },
+            { url: 'img/leopard.jpg', alt: 'leopard' },
+            { url: 'img/white-cat.jpg', alt: 'white-cat' }
+        ],
+        delayPerSlide: 5
+    });
+  </script>
 </body>
 </html>
